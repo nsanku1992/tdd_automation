@@ -11,4 +11,13 @@ public class DemoT {
         WebDriver driver = new DemoTests().getDriver();
         driver.navigate().to("https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager/4.4.3");
     }
+
+    /**
+     * Verify firefox setup
+     */
+    @Test
+    public void verifyBonigarciaWorksForFireFox(){
+        WebDriver driver = new DemoTests().firefoxDriver();
+        driver.navigate().to("https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager/4.4.3");
+    }
 }
